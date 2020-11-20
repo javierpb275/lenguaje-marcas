@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<restaurants>
+
+        <restaurant type="gastronómico">
+
+                <name>Nova Lúa Chea</name>
+
+                <score>8,5</score>
+
+                <address>Medio Día, Calle Paseo Marítimo, 4, 15002 As Lagoas, A Coruña, 15002, A Coruña</address>
+
+                <average_price>15€</average_price>
+
+                <discount>-30% en carta!</discount>
+                
+                <book_button>RESERVAR·HASTA UN 30%</book_button>
+
+                <menus>
+
+                        <menu category="tostas">Tostas de pan artesano</menu>
+
+                        <menu category="compartir">Todo para compartir…</menu>
+
+                        <menu category="mar">De la mar...sabores</menu>
+
+                        <menu category="terminar">Algo más para terminar</menu>
+
+                        <menu category="postre">Postre</menu>
+
+                </menus>
+
+                <sales>
+
+                        <sale type="carta">-30% en carta!</sale>
+                        <sale type="fórmula">Fórmula 9.90…</sale>
+
+                </sales>
+
+                <photos>
+
+                        <photo user="asfefew">photo</photo>
+                        <photo user="wegrwfr">photo</photo>
+
+                </photos>
+
+                <opinions>
+
+                        <opinion user="asdfg" quality="10" service="10" environment="10">whatever</opinion>
+
+                </opinions>
+
+                <information>
+
+                      <schedule>
+                      
+                      <lunch>Comida: de 13:00 a 16:00 (excepto lunes)</lunch>
+                      <dinner>Cena: de 20:00 a 23:30 (excepto lunes)</dinner>
+                     
+                      </schedule>
+
+
+
+                        <how_to_get_there>Medio Día, Calle Paseo Marítimo, 4, 15002 As Lagoas, A Coruña, 15002, A Coruña, España, RestaurantAddress</how_to_get_there>
+
+
+
+                        <transport>Bus</transport>
+
+
+
+                        <instructions>Indicaciones</instructions>
+
+
+
+                        <about>Información sobre el restaurante</about>
+
+
+
+                        <features>Cerca Del Mar, Con Amigos, Con Vistas, Familia, Carnes, Pulpo, Welcome, Certificado De Excelencia TripAdvisor 2018, Económicos, Reabierto, Español, Europeo</features>
+
+
+
+                        <services>
+                        
+                        <how-to-pay>American Express, Mastercard, Tarjeta De Crédito, Visa</how-to-pay>
+                        <other_services>Aire Acondicionado, English Spoken, Wifi</other_services>
+                        
+                        </services>
+
+
+                </information>
+
+
+        </restaurant>
+
+
+</restaurants>

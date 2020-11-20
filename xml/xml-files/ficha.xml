@@ -1,0 +1,20 @@
+<!--<!ELEMENT FICHA (Nombre+, Apellido+, Direccion*, foto?, TelFijo*|TelMovil*)>-->
+ 
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<FICHA>
+<Nombre>Juan</Nombre>
+<Nombre>José</Nombre>
+<Apellido>Baldomir</Apellido>
+<Apellido>del Rio</Apellido>
+<Apellido>Canosa</Apellido>
+<Dirección>....</Dirección>
+<Dirección>....</Dirección>
+<Foto>http://efrwf.com/foto</Foto>
+<TelMovil>243535436</TelMovil>
+<TelMovil>243535436</TelMovil>
+<TelFijo>243535436</TelFijo>
+<TelMovil>243535436</TelMovil>
+<TelFijo>243535436</TelFijo>
+</FICHA>
+</root>

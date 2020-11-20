@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<facturas xmlns:empresa="/empresa" 
+          xmlns:enviar_a="/enviar-a"
+          xmlns:facturar_a="/facturar-a">
+ 
+<factura num="ES-001">
+ 
+<fecha_ped valor="29/01/2019"/>
+<n_pedido valor="1730/2019"/>
+<fecha_ven valor="29/01/2019"/>
+ 
+<empresa:dirección denominación="Rojo Polo Paella Inc." calle="Carretera Muelle 38">
+<empresa:CP valor="37531"/>
+<empresa:población valor="Ávila"/>
+<empresa:provincia valor="Ávila"/>
+</empresa:dirección>
+ 
+<enviar_a:enviar_a denominación="Leda Villareal">
+<enviar_a:dirección valor="Cercas Bajas 68"/>
+<enviar_a:CP valor="47300"/>
+<enviar_a:población valor="Cadiz"/>
+<enviar_a:provincia valor="Cadiz"/>
+</enviar_a:enviar_a>
+ 
+<facturar_a:facturar_a denominación="Leda Villareal">
+<facturar_a:dirección valor="Virgen Blanca 63"/>
+<facturar_a:CP valor="08759"/>
+<facturar_a:población valor="Burgos"/>
+<facturar_a:provincia valor="Burgos"/>
+</facturar_a:facturar_a>
+ 
+<productos>
+ 
+<producto>
+<cantidad valor="1"/>
+<descripción valor="Talla pequeña traje de luces rojo"/>
+<pu valor="100.00"/>
+<importe valor="100.00"/>
+</producto>
+ 
+<producto>
+<cantidad valor="2"/>
+<descripción valor="Mui grande churrolito"/>
+<pu valor="25.00"/>
+<importe valor="50.00"/>
+</producto>
+ 
+<producto>
+<cantidad valor="3"/>
+<descripción valor="Equipaje de fútbol"/>
+<pu valor="5.00"/>
+<importe valor="15.00"/>
+</producto>
+ 
+</productos>
+ 
+<totales>
+
+<subtotal valor="165.00"/>
+<IVA porcentaje="21.0" valor="34.65"/>
+<total valor="199.65"/>
+
+</totales>
+ 
+ 
+ 
+<condiciones>
+
+<plazo valor="15" unidad="días"/>
+<cuenta banco="Santander">
+<IBAN valor="ES12 3456 7891"/>
+<SWIFT valor="ABCDESM1XXX"/>
+</cuenta>
+
+</condiciones>
+ 
+</factura>
+ 
+</facturas>

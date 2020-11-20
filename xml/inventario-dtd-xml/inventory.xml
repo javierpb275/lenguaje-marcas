@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<inventory>
+ 
+<products type="Jacket">
+ 
+<product pid="1">
+<description>Blue Jacket</description>
+<stock>23</stock>
+<price currency="$">46.25</price>
+</product>
+ 
+<product pid="2">
+<description>Green Jacket</description>
+<stock>31</stock>
+<price currency="$">57.05</price>
+</product>
+ 
+</products>
+ 
+<products type="Hat">
+ 
+<product pid="3">
+<description>Blue Hat</description>
+<stock>14</stock>
+<price currency="$">17.99</price>
+</product>
+ 
+<product pid="4">
+<description>Green Hat</description>
+<stock>10</stock>
+<price currency="$">15.95</price>
+</product>
+ 
+</products>
+ 
+</inventory>
+ 
+ 

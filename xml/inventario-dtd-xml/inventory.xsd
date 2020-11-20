@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+ 
+  <xs:element name="inventory" type="InventoryType"/>
+  
+  <xs:complexType name="InventoryType">
+    <xs:sequence>
+      <xs:element type="ProductsType" name="products" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  
+   <xs:complexType name="ProductsType">
+    <xs:sequence>
+      <xs:element type="ProductType" name="product" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="type" use="required"/>
+  </xs:complexType>
+  
+  <xs:complexType name="ProductType">
+    <xs:sequence>
+      <xs:element type="DescriptionType" name="description" maxOccurs="1" minOccurs="1"/>
+      <xs:element type="StockType" name="stock" maxOccurs="1" minOccurs="1"/>
+      <xs:element type="PriceType" name="price" maxOccurs="1" minOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute type="xs:nonNegativeInteger" name="pid" use="required"/>
+  </xs:complexType>
+  
+  <xs:simpleType name="DescriptionType">
+      <xs:restriction base="xs:string">
+         <xs:pattern value="([A-Z][a-z ]*)+"/>
+         <xs:whiteSpace value="collapse"/>
+      </xs:restriction>
+  </xs:simpleType>
+ 
+	<xs:simpleType name="StockType">
+      <xs:restriction base="xs:nonNegativeInteger">
+        <xs:minInclusive value="0"/>
+        <xs:pattern value="[0]|([1-9][0-9]+)+"/>
+      </xs:restriction>
+	</xs:simpleType>
+	
+  <xs:simpleType name="PriceValueType"> 
+  <xs:restriction base="xs:decimal">
+     <xs:minInclusive value="0"/>
+     <xs:fractionDigits value="2"/>
+  </xs:restriction>
+</xs:simpleType>
+
+  <xs:complexType name="PriceType"> 
+  <xs:simpleContent>
+    <xs:extension base="PriceValueType"> 
+      <xs:attribute type="CurrencyType" name="currency" default="$"/>
+    </xs:extension>  
+  </xs:simpleContent>  
+</xs:complexType>
+ 
+  <xs:simpleType name="CurrencyType">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="€"/>
+        <xs:enumeration value="$"/>
+        <xs:enumeration value="pounds"/>
+    </xs:restriction>
+  </xs:simpleType>
+ 
+</xs:schema>

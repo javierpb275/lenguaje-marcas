@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+ 
+<head> 
+<title>holamundo5</title>
+</head>
+ 
+<style>
+    #padre {
+        position: absolute;/*se solapan*/
+        top: 60px;
+        left: 30px;
+        border: 1px red solid;
+        width: 500px;
+        height: 400px;
+    }
+ 
+    #hijo1 {
+        position: fixed;/*fijo en el sitio aunque hagas scroll*/
+        top: 10px;
+        left: 40px;
+        width: 150px;
+        height: 100px;
+        border: tomato 1px dotted;
+    }
+    #hijo2 {
+        position: relative;
+        top: 30px;
+        left: 70px;
+        width: 150px;
+        height: 100px;
+        border: blue 1px dotted;
+    }
+    
+</style>
+ 
+<body style="position:absolute;">
+ 
+    <div id="padre">
+        <div id="hijo1"></div>
+        <div id="hijo2"></div>
+    </div>
+ 
+</body>
+ 
+</html>
