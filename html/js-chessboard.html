@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>tablero ajedrez</title>
+        <title>JavaScript Chessboard</title>
         <meta charset="ISO-8859-1">
         <style>
             .chessboard
@@ -14,7 +14,7 @@
                 padding: none; 
                 font-size: 0px;
             }
-            .rawboard
+            .rowboard
             {
                 width: 100%;
                 height: calc(100% / 8);
@@ -39,16 +39,16 @@
     <body class="chessboard" >
         <script>
 
-            var tf = window.prompt("Numero de filas")
-            var tc = window.prompt("Numero de columnas")
+            const rows = window.prompt("Number of rows:")
+            const columns = window.prompt("Number of columns:")
 
-            for (var f=1; f<=tf; f++) {
+            for (let r = 1; r <= rows; r++) {
 
-                document.write("<div class='rawboard'>");
+                document.write("<div class='rowboard'>");
 
-                for(var c=1; c<=tc; c++){
+                for (let c = 1; c <= columns; c++) {
 
-                    if (( (f % 2 != 0) && (c % 2 != 0) ) || ( (f % 2 == 0) && (c % 2 == 0) )){
+                    if (( (r % 2 != 0) && (c % 2 != 0) ) || ( (r % 2 == 0) && (c % 2 == 0) )){
                         document.write("<div class='cellboard white'></div>");
                     } else {
                         document.write("<div class='cellboard black'></div>");
