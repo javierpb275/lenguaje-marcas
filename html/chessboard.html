@@ -1,112 +1,61 @@
 <!DOCTYPE html>
 <html>
-<head> 
-<title>My Chessboard</title>
-<style>
-    body {
-    margin: 0;
-    }
-    .chessboard {
-        height: 100%;
-        width: 100%;
-        position: fixed;
-        display: grid;
-        grid-template-columns: repeat(8, 1fr);
-    }
-    .white {
-        height: 100%;
-        width: 100%;
-        background-color: wheat;
-        text-align:center;
-        border: 1px solid black;
-    }
-    .black {
-        height: 100%;
-        width: 100%;
-        background-color: rgba(82, 58, 28, 0.822);
-        text-align:center;
-        border:1px solid black;
-    }
-</style>
-</head>
-<body>
+    <head>
+        <title>tablero ajedrez</title>
+        <meta charset="ISO-8859-1">
+        <style>
+            .chessboard
+            { 
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                margin: none;
+                border: none;
+                padding: none; 
+                font-size: 0px;
+            }
+            .rawboard
+            {
+                width: 100%;
+                height: calc(100% / 8);
+            }
+            .cellboard
+            {
+                display: inline-block;
+                width: calc(100% / 8);
+                height: 100%;
+            }
+            .black
+            {
+                background-color:black;
+            }
+            .white
+            {
+                background-color: white;
+            }
 
-    <div class="chessboard">
+        </style>
+    </head>
+    <body class="chessboard" >
+        <script>
 
-    <div class="white">&#9820;</div>
-    <div class="black">&#9822;</div>
-    <div class="white">&#9821;</div>
-    <div class="black">&#9819;</div>
-    <div class="white">&#9818;</div>
-    <div class="black">&#9821;</div>
-    <div class="white">&#9822;</div>
-    <div class="black">&#9820;</div>
+            var tf = window.prompt("Numero de filas")
+            var tc = window.prompt("Numero de columnas")
 
-    <div class="black">&#9823;</div>
-    <div class="white">&#9823;</div>
-    <div class="black">&#9823;</div>
-    <div class="white">&#9823;</div>
-    <div class="black">&#9823;</div>
-    <div class="white">&#9823;</div>
-    <div class="black">&#9823;</div>
-    <div class="white">&#9823;</div>
+            for (var f=1; f<=tf; f++) {
 
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
+                document.write("<div class='rawboard'>");
 
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
+                for(var c=1; c<=tc; c++){
 
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
+                    if (( (f % 2 != 0) && (c % 2 != 0) ) || ( (f % 2 == 0) && (c % 2 == 0) )){
+                        document.write("<div class='cellboard white'></div>");
+                    } else {
+                        document.write("<div class='cellboard black'></div>");
+                    }
 
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-
-    
-    <div class="white">&#9817;</div>
-    <div class="black">&#9817;</div>
-    <div class="white">&#9817;</div>
-    <div class="black">&#9817;</div>
-    <div class="white">&#9817;</div>
-    <div class="black">&#9817;</div>
-    <div class="white">&#9817;</div>
-    <div class="black">&#9817;</div>
-
-    <div class="black">&#9814;</div>
-    <div class="white">&#9816;</div>
-    <div class="black">&#9815;</div>
-    <div class="white">&#9813;</div>
-    <div class="black">&#9812;</div>
-    <div class="white">&#9815;</div>
-    <div class="black">&#9816;</div>
-    <div class="white">&#9814;</div>
-
-    </div>
-
+                }
+            }
+        </script>  
     </body>
-   </html>
+ </html>
