@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+    </head>
+    <body>
+        <script>
+ 
+        /*THIS IS A CALCULATOR:*/
+ 
+    var first = prompt ("Enter first number");
+    var operation = prompt ("What do you want to do?")
+    var second = prompt ("Enter second number");
+    var sum = Number(first) + Number(second);
+    var subtract = Number(first) - Number(second);
+    var division = Number(first) / Number(second);
+    var multiply = Number(first) * Number(second);
+ 
+    if (operation === "+") {
+        alert (sum);
+    } else if (operation === "-") {
+        alert(subtract);
+    }  else if (operation === "/") {
+        alert(division);
+    }  else if (operation === "*") {
+        alert(multiply);
+    } else {
+        alert("ERROR")
+    };
+ 
+        </script>  
+    </body>
+ </html>
